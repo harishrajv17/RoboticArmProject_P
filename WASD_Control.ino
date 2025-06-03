@@ -104,7 +104,7 @@ void loop() {
   pid_linear.Compute();
 
   // Apply to motors
-  controlMotor(rev_motor_output, REV_MOTOR_IN1, REV_MOTOR_IN2, REV_MOTOR_PWM);
+  controlMotor(-rev_motor_output, REV_MOTOR_IN1, REV_MOTOR_IN2, REV_MOTOR_PWM);
   controlMotor(prism_motor_output, PRISM_MOTOR_IN3, PRISM_MOTOR_IN4, PRISM_MOTOR_PWM);
 
   // Debug info
